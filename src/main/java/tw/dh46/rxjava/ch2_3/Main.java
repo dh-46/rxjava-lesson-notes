@@ -40,5 +40,16 @@ public class Main {
                     }
                 });
 
+        /**
+         * Ch2_4: Java 8 Lambda
+         */
+        dataList.stream()
+                .filter(weather -> {
+                    // 可自行設定條件回傳boolean
+                    // 回true才會在forEach的accept中拿到
+                    return weather.getLocation().equals("Taipei");
+                })
+                .forEach(weather -> System.out.println(weather.toString()));
+
     }
 }
