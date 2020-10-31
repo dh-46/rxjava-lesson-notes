@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+}
+
+group 'tw.dh46.codelab.rxjava'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    // 引用Rxjava
+    implementation "io.reactivex.rxjava3:rxjava:3.0.7"
+}
